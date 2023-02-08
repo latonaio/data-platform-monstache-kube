@@ -1,0 +1,15 @@
+mongo-url = "mongodb://mongo-srv:27017"
+
+change-stream-namespaces = [""]
+
+elasticsearch-urls = ["http://elasticsearch:9200"]
+
+elasticsearch-max-conns = 1
+
+elasticsearch-max-seconds = 1
+
+elasticsearch-max-docs = 1
+
+verbose = true
+
+enable-http-server = true
