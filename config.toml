@@ -1,8 +1,8 @@
-mongo-url = "mongodb://mongo-srv:27017"
+mongo-url = "mongodb://data-platform-mongodb-replicaset-kube:27017"
 
 change-stream-namespaces = [""]
 
-elasticsearch-urls = ["http://elasticsearch:9200"]
+elasticsearch-urls = ["http://data-platform-elasticsearch-kube:9200"]
 
 elasticsearch-max-conns = 1
 

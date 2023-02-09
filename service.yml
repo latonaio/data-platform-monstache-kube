@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data-platform-monstache-kube
+  labels:
+    app: data-platform-monstache-kube
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data-platform-monstache-kube
+  template:
+    metadata:
+      labels:
+        app: data-platform-monstache-kube
+    spec:
+      nodeName: worker
+      containers:
+        - args:
+            - -f
+            - /config.toml
+          name: data-platform-monstache-kube
+          image: latonaio/data-platform-monstache-kube:latest
+          imagePullPolicy: Always
